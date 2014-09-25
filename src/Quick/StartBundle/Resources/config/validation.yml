@@ -1,0 +1,18 @@
+Quick\StartBundle\Entity\Blog:
+    properties:
+        link:
+            - NotBlank: ~
+            - Url: ~
+
+        text:
+            - NotBlank: ~
+            
+        image:
+            - NotBlank: ~
+            - File:
+                maxSize: 6M
+                mimeTypes: 
+                    - image/jpeg
+                    - image/gif
+                    - image/png 
+            - Type: Symfony\Component\HttpFoundation\File\UploadedFile

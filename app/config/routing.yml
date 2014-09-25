@@ -1,0 +1,4 @@
+quick_start:
+    resource: "@QuickStartBundle/Resources/config/routing.yml"
+    prefix:   /
+

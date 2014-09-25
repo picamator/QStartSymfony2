@@ -2,12 +2,25 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Welcome to Symfony 2 QuickStart!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="css/base.css" />
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            {% block header %}<hr />{% endblock %}
+        </header>
+        <article>
+            {% block content %}{% endblock %}
+        </article>    
+        <footer>
+            {% block footer %}
+                <hr />
+                Copyright &copy; {{"now"|date("Y")}} QStartSymfony2, All Rights Reserved
+            {% endblock %}
+        </footer>    
         {% block javascripts %}{% endblock %}
     </body>
 </html>

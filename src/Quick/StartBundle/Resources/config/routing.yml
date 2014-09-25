@@ -1,0 +1,3 @@
+quick_start_homepage:
+    path:     /
+    defaults: { _controller: QuickStartBundle:Default:index }

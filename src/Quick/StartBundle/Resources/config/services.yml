@@ -1,0 +1,8 @@
+services:
+#    quick_start.example:
+#        class: Quick\StartBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    quick_start.form.type.blog:
+        class: Quick\StartBundle\Form\Type\BlogType
+        tags:
+            - { name: form.type, alias: blog }

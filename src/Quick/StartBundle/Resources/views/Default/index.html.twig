@@ -1,0 +1,8 @@
+{% extends '::base.html.twig' %}
+
+{% block content %}
+    <h1>My first Symfony 2 form</h1>
+    {{ include('QuickStartBundle:Message:flashNotice.html.twig') }}
+    {{ include('QuickStartBundle:Message:flashError.html.twig') }}
+    {{ form(form) }}
+{% endblock %}
