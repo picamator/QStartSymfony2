@@ -13,10 +13,10 @@ Form includes:
 * Input field
 * File upload field
 
-Submit button displays only deploy image without saving data to database.
-File is saved to image directory without clearing them from unused data.
+Submit button only deploys image without saving data to database.
+Image is saved to web/uploads/images directory.
 
 Instalation
 -----------
-Please follow instruction for install and configurate symfony 2.5.*
+Please follow instruction for install and configurate symfony 2.5.*.
 Additionally please set on folder /web/uploads/images permission to make possible write data by php.
